@@ -1,0 +1,4 @@
+# Initializers
+org.springframework.context.ApplicationContextInitializer=\
+com.hjw.diveinspringboot.autoconfigure.AfterHelloWorldApplicationContextInitializer,\
+com.hjw.diveinspringboot.autoconfigure.FirstHelloWorldApplicationContextInitializer
