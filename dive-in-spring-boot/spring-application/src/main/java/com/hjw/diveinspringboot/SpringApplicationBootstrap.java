@@ -37,14 +37,34 @@ public class SpringApplicationBootstrap {
         springApplication.setWebApplicationType(WebApplicationType.SERVLET);
 
         springApplication.run(args);
+
+        // Lambda 代码示例
+        //Supplier<String> stringSupplier = () -> "1213";
+        //System.out.println(stringSupplier.get());
+        //Consumer<String> stringConsumer = (a) -> {
+        //    a = a + a;
+        //    System.out.println(a);
+        //};
+        //stringConsumer.accept("123");
+
+        //A a = new A(String.class);
     }
+
+    @SpringBootApplication
+    public static class ApplicationConfiguration {
+
+    }
+
+
+    //static class A{
+    //    public A(Class<?>... cls){
+    //        System.out.println(cls);
+    //    }
+    //}
 
     //@SpringBootApplication
     //static class ApplicationConfiguration{
     //
     //}
-    @SpringBootApplication
-    public static class ApplicationConfiguration{
 
-    }
 }
